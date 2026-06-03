@@ -110,30 +110,8 @@ set DEEPSEEK_API_KEY=sk-your-key-here
 
 ## 安装 Skill
 
-### 方式一：克隆仓库后复制（推荐）
-
 ```bash
-# 克隆本仓库
-git clone https://github.com/Jayvex/cc_rx_skill.git
-cd cc_rx_skill
-
-# 复制 Skill 到 Claude Code 的 skills 目录
-# 全局安装（所有项目可用）：
-cp -r .claude/skills/reasonix-dev ~/.claude/skills/
-
-# 或按项目安装（仅当前项目可用）：
-cp -r .claude/skills/reasonix-dev /你的项目路径/.claude/skills/
-```
-
-### 方式二：手动创建
-
-```bash
-# 创建 Skill 目录
-mkdir -p ~/.claude/skills/reasonix-dev
-
-# 下载 Skill 文件
-curl -o ~/.claude/skills/reasonix-dev/SKILL.md \
-  https://raw.githubusercontent.com/Jayvex/cc_rx_skill/main/.claude/skills/reasonix-dev/SKILL.md
+npx skills add https://github.com/Jayvex/cc_rx_skill/tree/main/.claude/skills --skill reasonix-dev
 ```
 
 ### 验证安装

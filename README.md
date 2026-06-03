@@ -110,30 +110,8 @@ Or let Reasonix prompt you on first run — it persists the key automatically.
 
 ## Installation
 
-### Option A: Clone & Copy (Recommended)
-
 ```bash
-# Clone this repo
-git clone https://github.com/Jayvex/cc_rx_skill.git
-cd cc_rx_skill
-
-# Copy the skill to your Claude Code skills directory
-# Global (available in all projects):
-cp -r .claude/skills/reasonix-dev ~/.claude/skills/
-
-# Or per-project (available in one project):
-cp -r .claude/skills/reasonix-dev /path/to/your/project/.claude/skills/
-```
-
-### Option B: Manual Setup
-
-```bash
-# Create the skill directory
-mkdir -p ~/.claude/skills/reasonix-dev
-
-# Download the skill file
-curl -o ~/.claude/skills/reasonix-dev/SKILL.md \
-  https://raw.githubusercontent.com/Jayvex/cc_rx_skill/main/.claude/skills/reasonix-dev/SKILL.md
+npx skills add https://github.com/Jayvex/cc_rx_skill/tree/main/.claude/skills --skill reasonix-dev
 ```
 
 ### Verify Installation
